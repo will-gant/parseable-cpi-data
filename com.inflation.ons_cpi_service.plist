@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.inflation.ons_cpi_service</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>source /path/to/repo/venv/bin/activate && python /path/to/repo/app.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/path/to/repo</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>FLASK_APP</key>
+        <string>app.py</string>
+        <key>FLASK_ENV</key>
+        <string>production</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/path/to/repo/output.log</string>
+    <key>StandardErrorPath</key>
+    <string>/path/to/repo/error.log</string>
+</dict>
+</plist>
