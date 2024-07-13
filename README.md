@@ -1,5 +1,7 @@
 # CPI _with real dates_
 
+<img src="./success.png">
+
 A highly sophisticated Python application to grab a time series of UK Consumer Price Index data from the Office For National Statistics website, and then transform them from this...
 
 ```json
@@ -70,4 +72,3 @@ curl localhost:5000
 
 {"cpi":[{"date":"1988-01-31T00:00:00","value":48.4},{"date":"1988-02-29T00:00:00","value":48.6},{"date":"1988-03-31T00:00:00","value":48.7},{"date":"1988-04-30T00:00:00","value":49.3},{"date":"1988-05-31T00:00:00","value":49.5},{"date":"1988-06-30T00:00:00","value":49.7},{"date":"1988-07-31T00:00:00","value":49.7},{"date":"1988-08-31T00:00:00","value":49.9},{"date":"1988-09-30T00:00:00","value":50.1},{"date":"1988-10-31T00:00:00","value":50.3},{"date":"1988-11-30T00:00:00","value":50.5},{"date":"1988-12-31T00:00:00","value":50.6} ...
 ```
-
